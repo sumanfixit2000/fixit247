@@ -31,12 +31,12 @@ export default function Reviews() {
       <Container>
         {/* Heading */}
         <div className="mx-auto max-w-2xl text-center">
-         <div className="text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
-            What Our <span className="text-primary">Customers</span> Say
-          </h2>
-          <div className="mt-3 mx-auto h-0.5 w-20 bg-primary/70 rounded-full"></div>
-        </div>
+          <div className="text-center">
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">
+              What Our <span className="text-primary">Customers Say</span>
+            </h2>
+            <div className="mt-3 mx-auto h-0.5 w-20 bg-primary/70 rounded-full"></div>
+          </div>
           <p className="mt-3 text-muted">
             Trusted by hundreds of homeowners for reliable and professional
             service.

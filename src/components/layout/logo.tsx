@@ -12,10 +12,8 @@ export default function Logo() {
 export function DarkLogo() {
   return (
     <div className="flex items-center gap-1 font-bold z-100 text-xl md:text-2xl tracking-tight">
-      <span className=" text-white">
-        Fixit
-      </span>
-      <span className="text-blue-400">24/7</span>
+      <span className="text-white">Fixit</span>
+      <span className="text-primary">24/7</span>
     </div>
   );
 }
