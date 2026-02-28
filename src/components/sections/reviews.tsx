@@ -27,7 +27,7 @@ export default function Reviews() {
   ];
 
   return (
-    <section className="section-muted section">
+    <section className="section-muted section py-8 my-4">
       <Container>
         {/* Heading */}
         <div className="mx-auto max-w-2xl text-center">

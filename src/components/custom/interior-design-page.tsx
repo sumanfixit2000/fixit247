@@ -141,7 +141,7 @@ export default function InteriorDesignPage({ service }: Props) {
       </section>
 
       {/* ================= SHOWCASE WORKS ================= */}
-      <section className="section">
+      <section className="section py-8 md:py-16 mt-8 md:mt-12">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
             <div className="text-center">
@@ -245,7 +245,7 @@ export default function InteriorDesignPage({ service }: Props) {
       </section>
 
       {/* ================= PROCESS SECTION ================= */}
-      <section className="relative section overflow-hidden bg-gradient-to-b from-blue-50 via-white to-blue-50">
+      <section className="relative py-8 md:py-16 section overflow-hidden bg-gradient-to-b from-blue-50 via-white to-blue-50">
         {/* Subtle Grid Background */}
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px]" />
 

@@ -35,7 +35,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="section">
+    <section className="section py-16">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <div className="text-center">

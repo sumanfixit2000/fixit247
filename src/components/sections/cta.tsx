@@ -5,7 +5,7 @@ import { CALL_LINK, WHATSAPP_LINK } from "@/lib/constants";
 
 export default function CTA() {
   return (
-    <section className="section pt-6">
+    <section className="section py-8">
       <Container>
         <div className="relative overflow-hidden rounded-2xl border border-border bg-blue-50/40 p-8 md:p-12">
           {/* Soft SVG Shapes */}

@@ -13,7 +13,7 @@ import { CALL_LINK, WHATSAPP_LINK } from "@/lib/constants";
 
 export default function JoinTechnicianCTA() {
   return (
-    <section className="section -my-10">
+    <section className="section my-6">
       <Container>
         <div className="relative overflow-hidden rounded-2xl border border-border p-6 md:p-10">
 

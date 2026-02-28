@@ -32,7 +32,7 @@ export default function Process() {
   ];
 
   return (
-    <section className="section">
+    <section className="section py-8">
       <Container>
         <div className="mx-auto max-w-3xl">
           {/* Heading */}

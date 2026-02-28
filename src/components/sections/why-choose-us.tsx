@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function WhyChooseUs() {
   return (
-    <section className="section-muted py-16">
+    <section className="section-muted py-16 my-6 md:py-8">
       <Container>
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
           {/* Left Image */}
