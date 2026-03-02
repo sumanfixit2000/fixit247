@@ -14,8 +14,23 @@ import Container from "../ui/container";
 import { FiChevronRight } from "react-icons/fi";
 
 export default function HomeRenovationPage() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Home Renovation",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "Fixit247",
+    },
+    description: "Professional home renovation services delivered with transparency, expertise and long-term reliability. We offer structural modifications, kitchen renovation, bathroom remodeling, electrical upgrades, and more.",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <Container>
         <div className="mt-4 sm:my-6 flex items-center gap-1 text-xs sm:text-sm text-muted overflow-hidden whitespace-nowrap">
           <Link href="/" className="hover:text-foreground shrink-0">

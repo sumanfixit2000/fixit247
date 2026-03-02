@@ -23,13 +23,25 @@ export async function generateMetadata({
 
   if (!service) {
     return {
-      title: "Service Not Found",
+      title: "Service Not Found | Fixit247",
+      description: "The requested service could not be found.",
     };
   }
 
   return {
-    title: `${service.name} | ServicePro`,
+    title: `${service.name} | Fixit247`,
     description: service.description,
+    keywords: [service.name, "Fixit247", "Service", "Repair", "Home Service"],
+    openGraph: {
+      title: `${service.name} | Fixit247`,
+      description: service.description,
+      type: "website",
+    },
+    twitter: {
+      card: "summary",
+      title: `${service.name} | Fixit247`,
+      description: service.description,
+    },
   };
 }
 

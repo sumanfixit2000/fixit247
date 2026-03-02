@@ -12,6 +12,17 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Fixit247",
   description: "Professional Home & Appliance Services",
+  keywords: ["home repair", "appliance service", "fixit247", "maintenance"],
+  openGraph: {
+    title: "Fixit247",
+    description: "Professional Home & Appliance Services",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Fixit247",
+    description: "Professional Home & Appliance Services",
+  },
 };
 
 export default function RootLayout({

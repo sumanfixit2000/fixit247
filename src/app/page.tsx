@@ -6,6 +6,12 @@ import Process from "@/components/sections/process";
 import Reviews from "@/components/sections/reviews";
 import Services from "@/components/sections/services";
 import WhyChooseUs from "@/components/sections/why-choose-us";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Fixit247 | Home",
+  description: "Welcome to Fixit247 - Your trusted partner for professional home and appliance services.",
+};
 
 export default function HomePage() {
   return (
