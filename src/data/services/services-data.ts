@@ -1369,7 +1369,7 @@ export const services: Service[] = [
   },
 
   {
-    slug: "/",
+    slug: "",
     name: "More Services Coming soon",
     type: "standard",
     category: "home-service",
