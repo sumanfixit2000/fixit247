@@ -25,6 +25,26 @@ export const metadata: Metadata = {
   },
 };
 
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      name: "Fixit247",
+      url: "https://fixit247.in",
+      description: "Professional home appliance repair and home services",
+      areaServed: "India",
+      serviceType: [
+        "AC Repair",
+        "Washing Machine Repair",
+        "Refrigerator Repair",
+        "Plumbing Services"
+      ],
+    }),
+  }}
+/>
+
 export default function RootLayout({
   children,
 }: {

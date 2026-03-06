@@ -1,3 +1,6 @@
+export const dynamic = "force-static";
+export const dynamicParams = false;
+
 import { notFound } from "next/navigation";
 import { services } from "@/data/services/services-data";
 import { getServiceBySlug } from "@/data/services/service-helper";
