@@ -18,9 +18,9 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const service = services.find((s) => s.slug === slug);
 
@@ -31,24 +31,15 @@ export async function generateMetadata({
     };
   }
 
-  const url = `https://fixit247.in/services/${service.slug}`;
-
   return {
     title: `${service.name} | Fixit247`,
     description: service.description,
     keywords: [service.name, "Fixit247", "Service", "Repair", "Home Service"],
-
-    alternates: {
-      canonical: url,
-    },
-
     openGraph: {
       title: `${service.name} | Fixit247`,
       description: service.description,
-      url: url,
       type: "website",
     },
-
     twitter: {
       card: "summary",
       title: `${service.name} | Fixit247`,
@@ -58,12 +49,12 @@ export async function generateMetadata({
 }
 
 /* Page */
-export default function ServicePage({
+export default async function ServicePage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const service = getServiceBySlug(slug);
 
@@ -76,4 +67,3 @@ export default function ServicePage({
   }
 
   return <StandardServicePage service={service} />;
-}
